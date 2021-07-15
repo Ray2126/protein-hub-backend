@@ -1,0 +1,14 @@
+services:
+  app:
+    image: node:16
+    working_dir: /work
+    volumes: [ ".:/work" ]
+    command: "yarn start"
+    depends_on:
+      - "dynamodb-local"
+    ports:
+      - "5000:8080"
+  dynamodb-local:
+    image: amazon/dynamodb-local
+    ports:
+      - "8000:8000"
