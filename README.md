@@ -1,3 +1,5 @@
+Deployed link: https://90yd15q08j.execute-api.ap-southeast-2.amazonaws.com/Prod/
+
 # protein-hub-backend
 
 This project contains source code and supporting files for a serverless application that you can deploy with the AWS Serverless Application Model (AWS SAM) command line interface (CLI). It includes the following files and folders:
