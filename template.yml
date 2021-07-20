@@ -25,7 +25,7 @@ Resources:
   getAllItemsFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: src/handlers/get-all-items.getAllItemsHandler
+      Handler: src/handlers/get-all-items.handler
       Runtime: nodejs14.x
       MemorySize: 128
       Timeout: 100
