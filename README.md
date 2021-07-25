@@ -1,4 +1,4 @@
-Deployed link: https://90yd15q08j.execute-api.ap-southeast-2.amazonaws.com/Prod/
+Deployed link: https://xs1lpp63h7.execute-api.ap-southeast-2.amazonaws.com/Prod/
 
 # protein-hub-backend
 
