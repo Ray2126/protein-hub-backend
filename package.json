@@ -1,6 +1,6 @@
 {
-    "name": "delete-test-01",
-    "description": "delete-test-01-description",
+    "name": "protein-hub-backend",
+    "description": "Serverless backend project for Protein Hub",
     "version": "0.0.1",
     "private": true,
     "dependencies": {
@@ -8,7 +8,6 @@
         "@middy/http-cors": "^2.4.3",
         "@middy/http-error-handler": "^2.4.3",
         "@middy/http-json-body-parser": "^2.4.3",
-        "@middy/validator": "^2.4.3",
         "aws-sdk": "^2.799.0",
         "axios": "^0.21.1",
         "dotenv": "^10.0.0",
