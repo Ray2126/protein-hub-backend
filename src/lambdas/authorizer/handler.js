@@ -1,6 +1,6 @@
 const authenticate = require('./authenticate');
 
-module.exports.handler = async (event, context) => {
+module.exports.handler = async (event) => {
   console.log('received event: ', event);
   try {
     const data = await authenticate(event);

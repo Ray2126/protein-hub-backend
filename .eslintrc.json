@@ -1,0 +1,46 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "rules": {
+    "arrow-spacing": "error",
+    "complexity": [
+      "error",
+      6
+    ],
+    "curly": [
+      "error",
+      "all"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "key-spacing": [
+      "error",
+      { "beforeColon": false }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-trailing-spaces": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "space-infix-ops": "error",
+    "no-shadow": "error",
+    "require-await": "error"
+  }
+}

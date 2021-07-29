@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const axios = require('axios');
 
 axios.request({
@@ -13,4 +13,4 @@ axios.request({
     audience: process.env.AUDIENCE,
     'grant_type': 'client_credentials',
   },
-}).then((res) => { console.log(res.data.access_token) });
+}).then((res) => { console.log(res.data.access_token); });
