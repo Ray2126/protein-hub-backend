@@ -1,6 +1,5 @@
 const middy = require('@middy/core');
 const jsonBodyParser = require('@middy/http-json-body-parser');
-const httpErrorHandler = require('@middy/http-error-handler');
 const cors = require('@middy/http-cors');
 
 const recipesTable = require('../../../libs/tables/recipesTable');
@@ -26,7 +25,6 @@ async function getRecipeById(event) {
 
 const handler = middy(getRecipeById)
   .use(jsonBodyParser())
-  .use(cors())
-  .use(httpErrorHandler());
+  .use(cors());
 
 module.exports = { handler };
