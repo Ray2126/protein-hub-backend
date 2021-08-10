@@ -30,10 +30,7 @@ Resources:
       Timeout: 100
       Policies:
         - DynamoDBCrudPolicy:
-            TableName: !Ref SampleTable
-      Environment:
-        Variables:
-          SAMPLE_TABLE: !Ref SampleTable
+            TableName: !Ref RecipeTable
       Events:
         Api:
           Type: Api
@@ -42,15 +39,27 @@ Resources:
             Path: /
             Method: GET
 
-  SampleTable:
-    Type: AWS::Serverless::SimpleTable
+  RecipeTable:
+    Type: AWS::DynamoDB::Table
     Properties:
-      PrimaryKey:
-        Name: id
-        Type: String
-      ProvisionedThroughput:
-        ReadCapacityUnits: 2
-        WriteCapacityUnits: 2
+      TableName: recipes-prod
+      AttributeDefinitions:
+        -
+          AttributeName: "pk"
+          AttributeType: "S"
+        -
+          AttributeName: "sk"
+          AttributeType: "S"
+      KeySchema:
+        -
+          AttributeName: "pk"
+          KeyType: "HASH"
+        -
+          AttributeName: "sk"
+          KeyType: "RANGE"
+      ProvisionedThroughput: 
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
 
 Outputs:
   WebEndpoint:

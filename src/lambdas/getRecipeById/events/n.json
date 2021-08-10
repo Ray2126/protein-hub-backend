@@ -1,0 +1,6 @@
+{
+  "body": {
+    "recipeId": "1234"
+  },
+  "httpMethod": "GET"
+}
