@@ -36,6 +36,26 @@ class Recipe {
       imageUrl: doc.imageUrl,
     });
   }
+
+  toResponseDocument() {
+    return {
+      id: this.id,
+      authorId: this.authorId,
+      title: this.title,
+      createdAt: this.createdAt,
+      updatedAt: this.updatedAt,
+      servings: this.servings,
+      ingredients: this.ingredients,
+      method: this.method,
+      nutrition: this.nutrition,
+      prepTime: this.prepTime,
+      cookTime: this.cookTime,
+      dietTypes: this.dietTypes,
+      notes: this.notes,
+      description: this.description,
+      imageUrl: this.imageUrl,
+    };
+  }
 }
 
 module.exports = Recipe;

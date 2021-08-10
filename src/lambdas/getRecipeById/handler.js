@@ -16,7 +16,7 @@ async function getRecipeById(event) {
 
   const response = {
     statusCode: 200,
-    body: JSON.stringify(recipe),
+    body: JSON.stringify(recipe.toResponseDocument()),
   };
 
   console.info(`response from: ${event.path} statusCode: ${response.statusCode} body: ${response.body}`);
