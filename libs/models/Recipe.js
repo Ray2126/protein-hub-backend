@@ -19,12 +19,12 @@ class Recipe {
 
   static fromDynamoDocument(doc) {
     return new Recipe({
-      id: doc.id.S,
-      authorId: doc.authorId.S,
-      title: doc.title.S,
-      createdAt: doc.createdAt.S,
-      updatedAt: doc.updatedAt.S,
-      servings: doc.servings.N,
+      id: doc.id,
+      authorId: doc.authorId,
+      title: doc.title,
+      createdAt: doc.createdAt,
+      updatedAt: doc.updatedAt,
+      servings: doc.servings,
       ingredients: doc.ingredients,
       method: doc.method,
       nutrition: doc.nutrition,

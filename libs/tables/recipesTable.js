@@ -20,7 +20,6 @@ class RecipesTable {
       console.error(err);
       throw new Error('GetRecipeFailed', err);
     });
-
     return result.Items ? Recipe.fromDynamoDocument(result.Items[0]) : undefined;
   }
 }
