@@ -11,7 +11,7 @@ async function getRecipeById(event) {
 
   console.info('received:', event);
 
-  const recipeId = event.body.recipeId;
+  const recipeId = event.pathParameters.id;
   const recipe = await recipesTable.getRecipeById(recipeId);
 
   const response = {

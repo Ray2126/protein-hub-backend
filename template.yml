@@ -36,7 +36,7 @@ Resources:
           Type: Api
           Properties:
             RestApiId: !Ref MyApi
-            Path: /
+            Path: /recipes/{id}
             Method: GET
 
   RecipeTable:
